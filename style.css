@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+header{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+header figure{
+    position: relative;
+    width: 250%;
+    margin: 0;
+    left: 0;
+    animation: 25s slider infinite alternate ease;
+}
+header figure img{
+    outline: 10px solid rgb(255, 255, 255);
+    float: left;
+    width: 20%;
+    height: 50%;
+}
+nav{
+    height: 100px;
+    background: linear-gradient(45deg, rgb(226, 226, 226), rgb(216, 216, 216));
+    text-align: center;
+    line-height: 100px;
+    position: sticky;
+    top: 0;
+    font-family: 'Roboto', sans-serif;
+    z-index: 2;
+    opacity: .95;
+}
+nav li{
+    display: inline;
+}
+nav a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: .3s ease;
+    opacity: .7;
+}
+nav a:hover{
+    opacity: 1;
+}
+.sekcja1, .sekcja2, .sekcja3{
+    background: linear-gradient(45deg, rgb(243, 243, 243rgb(231, 231, 231)39));
+    color: rgb(0, 0, 0);
+}
+.sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    font-size: 3.5em;
+    font-family: 'Zilla Slab', serif;
+}
+.sekcja1 p, .sekcja2 p, .sekcja3 p{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    font-size: 1.8em;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(56, 56, 56);
+}
+#parallax1{
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/parallax1.png");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+#parallax2{
+    height: 60vh;
+    width: 100%;
+    background-image: url("../img/parallax2.png");
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+#parallax3{
+    height: 40vh;
+    width: 100%;
+    background-image: url("../img/parallax3.png");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+.sekcja2>.galeria{
+    text-align: center;
+}
+.sekcja3>.efekty{
+    text-align: center;
+}
+.obraz1, .obraz2, .obraz3, .obraz4{
+    margin: 5px;
+}
+.obraz1{
+    transition: .3s ease;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border: rgba(166, 2, 3, 0.3) solid 1px;
+    border-radius: 50%;
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.obraz1:hover{
+    transform: scale(0.9);
+    border-radius: 0;
+    cursor: pointer;
+}
+.obraz2{
+    transition: .3s ease;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border: rgba(166, 2, 3, 0.3) solid 1px;
+    border-radius: 50%;
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.obraz2:hover{
+    transform: scale(0.9);
+    border-radius: 0;
+    cursor: pointer;
+}
+.obraz3{
+    transition: .3s ease;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border: rgba(166, 2, 3, 0.3) solid 1px;
+    border-radius: 50%;
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.obraz3:hover{
+    transform: scale(0.9);
+    border-radius: 0;
+    cursor: pointer;
+}
+.obraz4{
+    transition: .3s ease;
+    border: 10px solid rgba(255, 255, 255, 0);
+    border: rgba(166, 2, 3, 0.3) solid 1px;
+    border-radius: 50%;
+    transition: all 1.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.obraz4:hover{
+    transform: scale(0.9);
+    border-radius: 0;
+    cursor: pointer;
+}
+.icons{
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+}
+.icons img{
+    padding: 5px;
+    padding-top: 25px;
+    width: 50px;
+}
+footer{
+    height: 100px;
+    color: white;
+    width: 100%;
+    margin: auto;
+    background-color: rgb(236, 236, 236); 
+}
+@keyframes slider{
+    0%{left:-0%}
+    5%{left:-0%}
+    15%{left:-50%}
+    20%{left:-50%}
+    30%{left:-100%}
+    35%{left:-100%}
+    45%{left:-150%}
+    50%{left:-150%}
+    60%{left:-100%}
+    65%{left:-100%}
+    75%{left:-50%}
+    80%{left:-50%}
+    90%{left:-0%}
+    95%{left:-0%}
+    100%{left:-0%}
+}
+@media(max-width:500px){
+    nav a{
+    padding: 25px;
+    font-size: 1.3em;
+}
+.sekcja1 p, .sekcja2 p, .sekcja3 p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.1em;
+}
+.sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2.5em;
+}
+.galeria img{
+    width: 250px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.efekty img{
+    width: 150px;
+}
+}
+@media(min-width:501px) and (max-width:800px){
+    nav a{
+    padding: 30px;
+    font-size: 1.5em;
+}
+.sekcja1 p, .sekcja2 p, .sekcja3 p{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 1.2em;
+}
+.sekcja1 h2, .sekcja2 h2, .sekcja3 h2{
+    padding-left: 50px;
+    padding-right: 50px;
+    font-size: 2.5em;
+}
+.galeria img{
+    width: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.efekty img{
+    width: 200px;
+}
+}
