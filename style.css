@@ -71,7 +71,7 @@ nav a:hover{
 #parallax1{
     height: 40vh;
     width: 100%;
-    background-image: url("../img/parallax1.png");
+    background-image: url("parallax1.png");
     background-size: cover;
     background-position: center;
     display: table;
@@ -80,7 +80,7 @@ nav a:hover{
 #parallax2{
     height: 60vh;
     width: 100%;
-    background-image: url("../img/parallax2.png");
+    background-image: url("parallax2.png");
     background-size: cover;
     background-position: center;
     display: table;
@@ -89,7 +89,7 @@ nav a:hover{
 #parallax3{
     height: 40vh;
     width: 100%;
-    background-image: url("../img/parallax3.png");
+    background-image: url("parallax3.png");
     background-size: cover;
     display: table;
     background-attachment: fixed;
